@@ -6,6 +6,8 @@ The backend server to my Snowball goal tracker api
 # Snowball Goal Planner
 
 ## Wireframe
+![]images/Snow Man wireframe.jpg
+![]images/ERD Board.jpg
 ERD Board.jpg{}
 
 
