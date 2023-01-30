@@ -8,6 +8,8 @@ I would also like to allow the user to set reminder notificaions according to th
 # Snowball Goal Planner
 
 ## Wireframe
+![Alt text](images/Snow%20Man%20wireframe.jpg)
+[label](images/P2%20ERD.pdf)
 
 
 ## MVP (CRUD + ERD + USER EXPERIENCE)
