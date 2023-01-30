@@ -1,19 +1,29 @@
 
 const mongoose = require('mongoose')
+
 const Schema = mongoose.Schema
 
 const goalSchema = new Schema(
 	{
-		goal: {
-			name: String,
+		name: {
+			type: String,
 			required: true,
 		},
-		steps: [
-            {
-                type: mongoose.Schema.Types.ObjectId,
-                ref: 'Goal'
-            }
-		]
+		timeframe: {
+			type: Number,
+			required: true,
+		},
+		purpose: {
+			type : String, 
+			required: true,
+		},
+
+		// steps: [
+        //     {
+        //         type: mongoose.Schema.Types.ObjectId,
+        //         ref: 'Goal'
+        //     }
+		// ]
 	},
 	{
 		timestamps: true,
@@ -22,3 +32,5 @@ const goalSchema = new Schema(
 
 
 const Goal = mongoose.model('Goal', goalSchema)
+
+module.exports = Goal

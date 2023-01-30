@@ -1,7 +1,7 @@
-const express = require('express')
-const bcrypt = require('bcrypt')
+// const express = require('express')
+// const bcrypt = require('bcrypt')
 
-// const GoalGette = require('../models/user')
+// const GoalGetter = require('../models/user')
 
 // const router = express.Router()
 

@@ -20,34 +20,36 @@ const stepsSchema = new mongoose.Schema(
 module.exports = stepsSchema
 
 
-const mongoose = require('mongoose')
-const stepsSchema = require('./steps')
+
+// const stepsSchema = require('./steps')
 
 
-module.exports = Goal
+
 
 
 const express = require('express')
 const router = express.Router()
 
 
-const Goal = require('../models/goal')
-const { handle404 } = require('../lib/custom-errors')
+// const Goal = require('../models/goal')
+// const { handle404 } = require('../lib/custom-errors')
 
-router.post('/steps', (req, res, next) => {
-	const goalId = req.body.note.goalId
+// router.post('/steps', (req, res, next) => {
+// 	const goalId = req.body.note.goalId
 
-	Goal.findById(goalId)
-		.then(handle404)
-		.then((goal) => {
-			goal.notes.push(req.body.note)
+// 	Goal.findById(goalId)
+// 		.then(handle404)
+// 		.then((goal) => {
+// 			goal.steps.push(req.body.steps)
 
-			return goal.save()
-		})
+// 			return goal.save()
+// 		})
 
-		.then((goal) => res.status(201).json({ goal: goal }))
-		.catch(next)
-})
+// 		.then((goal) => res.status(201).json({ goal: goal }))
+// 		.catch(next)
+// })
+
+// module.exports = Goal
 
 module.exports = router
 
