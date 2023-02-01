@@ -1,29 +1,35 @@
+export const indexGoal = () => {
+    return fetch(`http://localhost:8000/goals`)
+}
 
-const express = require('express')
+export const createGoal = (data) => {
+    return fetch(`http://localhost:8000/goals`, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+}
 
-const mongoose = require('mongoose')
+export const showGoal = (id) => {
+    return fetch(`http://localhost:8000/goals/${id}`)
+}
 
-const db = require('./config/db')
+export const updateGoal = (data, id) => {
+    return fetch(`http://localhost:8000/goals/${id}`, {
+        method: 'PATCH',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+}
 
-const PORT = 8000
-
-const goalRoutes = require('./routes/goal-routes')
-
-mongoose.set('strictQuery', true)
-
-mongoose.connect(db, {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-})
-
-const app = express()
-
-app.use(express.json())
-
-app.use(goalRoutes)
-
-app.listen(PORT, () => {
-	console.log('listening on port ' + PORT)
-})
-
-module.exports = app
+export const deleteGoal = (id) => {
+    return fetch(`http://localhost:8000/goals/${id}`, {
+        method: 'DELETE'
+    })
+}
