@@ -1,8 +1,6 @@
 
 const mongoose = require('mongoose')
-
 const Schema = mongoose.Schema
-
 const goalSchema = new Schema(
 	{
 		name: {
@@ -18,12 +16,7 @@ const goalSchema = new Schema(
 			required: true,
 		},
 
-		// steps: [
-        //     {
-        //         type: mongoose.Schema.Types.ObjectId,
-        //         ref: 'Goal'
-        //     }
-		// ]
+		steps: [stepsSchema]
 	},
 	{
 		timestamps: true,

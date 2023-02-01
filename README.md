@@ -9,18 +9,18 @@ I would also like to allow the user to set reminder notificaions according to th
 
 ## Wireframe
 ![Alt text](images/Snow%20Man%20wireframe.jpg)
-[label](images/P2%20ERD.pdf)
+[label](https://github.com/KatBunny/Snowball-behindTheScenes/blob/main/images/P2%20ERD.pdf)
+label](https://github.com/KatBunny/Snowball-behindTheScenes/blob/main/images/P2%20ERD.pdf)
 
 
 ## MVP (CRUD + ERD + USER EXPERIENCE)
-       - As a user I want to be able to create an account.
-       - As a user I want to be able to sign in to my private account that has a cache of my saved information that      is able to be changed through a request.
-       - As a user, I want this site to be simple and easy to navigate so that I don't
-struggle with my goals because I am not sure how to access them.
-       - As a user I want to be able to create a goal.
-       - As a user I want to be able to see my goals.
-       - As a user I want to be able to update a goal.
-       - As a user I want to be able to delete a goal.
+* As a user I want to be able to create an account.
+* As a user I want to be able to sign in to my private account that has a cache of my saved information that is able to be changed through a request.
+* As a user, I want this site to be simple and easy to navigate so that I don't struggle with my goals because I am not sure how to access them.
+* As a user I want to be able to create a goal.
+* As a user I want to be able to see my goals.
+* As a user I want to be able to update a goal.
+* As a user I want to be able to delete a goal.
 
 
 
